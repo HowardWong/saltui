@@ -10,6 +10,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './FormGroup.styl';
 import cx from 'classnames'
+import PlusCircle from 'salt-icon/lib/PlusCircle';
 
 const changeEvents = [
   'onChange',
@@ -206,7 +207,7 @@ export default class FormGroup extends React.Component {
       <div className={cx('t-form-group', this.props.className)}>
         { this.cloneForm(this.props.children) }
         <div className="t-form-group-add" onClick={this.add}>
-          新增一条
+          <PlusCircle width="16px" height="16px" fill="#F37327" />新增一条
         </div>
       </div>
     )

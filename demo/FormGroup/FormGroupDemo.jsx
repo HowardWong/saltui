@@ -69,7 +69,7 @@ class Demo extends React.Component {
               name="textValue"
             />
             <SelectField
-              label="下拉选择"
+              label="月份"
               options={this.state.options}
               onSelect={this.selectChange}
               name="selectValue"
